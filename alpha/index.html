@@ -1,0 +1,862 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0">
+<link rel="shortcut icon" href="img/logo_for_black.png" type="image/x-icon">
+
+
+<meta charset="utf-8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="저스트코드 - JustCode">
+<meta name="naver-site-verification" content="545bb5b26b8e04615b611b3db88388eb3ac8fa3a"/>
+<meta name="keywords" content="아이디어로 세상을 바꾸고, 더 나은 세상을 만듭니다" />
+<meta name="description" content="사소한 아이디어로 더 나은 세상을 만듭니다." />
+<meta property="og:description" content="사소한 아이디어로 더 나은 세상을 만듭니다.">
+<meta property="og:image" content="img/logo_for_white">
+<meta property="og:image:width" content="160">
+<meta property="og:image:height" content="41">
+<meta property="og:url" content="https://justcode.bu.to/">
+
+
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
+<meta property="fb:pages" content="1463539053878956" />
+<title>저스트코드</title>
+<!--폰트로딩 오류로 main.css 웹으로 대체-->
+<link rel="stylesheet" href="http://blankcorp.kr/css/default.css">
+<!--<link rel="stylesheet" href="css/main.css">-->
+<link rel="stylesheet" href="css/header_inc.css">
+<link rel="stylesheet" href="css/main_inc.css">
+<link rel="stylesheet" href="css/footer_inc.css">
+<link rel="stylesheet" href="css/sub.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!--[if lte IE 8]>
+<script src="http://blankcorp.kr/js/html5.js"></script>
+<![endif]-->
+<script>
+</script>
+<script src="http://blankcorp.kr/js/jquery-1.9.1.min.js"></script>
+<script src="http://blankcorp.kr/js/jquery.menu.js"></script>
+<script src="http://blankcorp.kr/js/common.js"></script>
+<script src="http://blankcorp.kr/js/wrest.js"></script>
+<script src="http://blankcorp.kr/js/bootstrap.min.js" ></script>
+
+<script type="text/javascript" src="http://blankcorp.kr/js/jquery.transit.min.js"></script>
+<script src="http://blankcorp.kr/js/slick.min.js"></script>
+<link rel="stylesheet" href="http://blankcorp.kr/css/slick.min.css">
+<link rel="stylesheet" href="http://blankcorp.kr/css/slick-theme.min.css">
+<script type="text/javascript" src="http://blankcorp.kr/js/skrollr.min.js"></script>
+<script>
+var sk_obj = 0;
+function skrollrInit() {
+	sk_obj = skrollr.init({
+		forceHeight: true,
+		smoothScrolling: false,
+    mobileDeceleration: 0.004,
+		mobileCheck: function() {
+			//hack - forces mobile version to be off
+			return false;
+		}
+	});
+}
+</script>
+
+</head>
+<body>
+
+<!-- 다국어 링크 사용시 사용예))<a href=""><li>Korea</li></a>-->
+
+
+
+<!-- 상단 시작 { -->
+<h1 id="hd_h1">저스트코드</h1>
+<div id="skip_to_container"><a href="#container_skip">본문 바로가기</a><a href="#header_t_id">주메뉴 바로가기</a></div>
+
+<!-- 팝업레이어 시작 { -->
+<div id="hd_pop">
+    <h2>팝업레이어 알림</h2>
+
+<span class="sound_only">팝업레이어 알림이 없습니다.</span></div>
+
+<script>
+$(function() {
+    $(".hd_pops_reject").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+    });
+    $('.hd_pops_close').click(function() {
+        var idb = $(this).attr('class').split(' ');
+        $('#'+idb[1]).css('display','none');
+    });
+    $("#hd").css("z-index", 1000);
+});
+</script>
+<!-- } 팝업레이어 끝 --><!-- 상단 시작 { -->
+<div id="total_wrap">
+	<div id="wrap">
+
+		<div id="wrap_header">
+
+<script type="text/javascript">
+var sidebarurl = "http://justcode.bu.to"; // Change as required
+var sidebartitle = "저스트코드"; // Change as required
+var url = this.location;
+var title = "저스트코드";
+
+function bookmarksite() {
+	if (window.sidebar && window.sidebar.addPanel){ // Firefox
+		window.sidebar.addPanel(sidebartitle, sidebarurl,"");
+	}else if ( document.all ) { // IE Favorite
+		// 인터넷익스플로러(IE)
+		window.external.addFavorite(sidebarurl, sidebartitle);
+	}else if (window.opera && window.print) { // do nothing
+		// 오페라(Opera)
+		var elem = document.createElement('a');
+		elem.setAttribute('href', url);
+		elem.setAttribute('title', title);
+		elem.setAttribute('rel', 'sidebar');
+		elem.click();
+	}else if (navigator.appName=="Netscape") {
+		alert("확인을 클릭하신 후 주소창에서 <Ctrl-D>를 누르시면 즐겨찾기에 등록됩니다.");
+	}
+}
+</script>
+
+<div id="fullmenu" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="header_tgnb">
+				<div class="total" style="display:none;">
+					<div class="select_d" style="display:none;">
+					</div>
+				</div><!--total end  -->
+				</div>
+
+				<div class="taxt-right" data-dismiss="modal">
+					<a href="#" class="btn-close" onclick="$('#btn-fullmenu').removeClass('change');"><img src="http://blankcorp.kr/include/header/force/img/modal_close.png"/></a>
+				</div>
+			<div class="fullmenu-con">
+				<ul>
+															<li><div><a href="about.html" class="navi_block f-marko">about</a></div>
+																				<li><div><a href="team.html" class="navi_block f-marko">team</a></div>
+																				<li><div><a href="brand.html" class="navi_block f-marko">brand</a></div>
+																				<li><div><a href="news.html" class="navi_block f-marko">news</a></div>
+																				<li><div><a href="career.html" class="navi_block f-marko">career</a></div>
+													</ul>
+			</div>
+
+			<style>
+			.navi_cs				{clear:both; text-align:center;}
+			.navi_cs a			{display:block; margin-top:5%; padding:5% 0; color:#fff; font-size:1rem; line-height:100%;}
+			</style>
+
+			<div class="navi_cs">
+				<p class="f-markb">JustCode Corp.</p>
+				<p class="f-marko">Copyright, JustCode Corp. All rights reserved.</p>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+</div>
+<!-- //Modal -->
+<script>
+
+$(function(){
+	$('#btn-fullmenu').on('click',function(e){
+		e.preventDefault();
+		//$('#main-banner .btn-close').trigger('click');
+		$('#fullmenu').modal();
+		return false;
+	});
+	$(".fullmenu-con > ul > li > div > a").click(function(){
+		$(".sub_menu").hide();
+		$(this).parent().parent().find(".sub_menu").toggle();
+	});
+});
+</script>
+<div class="header_t_bg" id="header_t_id">
+<style>
+.f-nav{ z-index: 99; position: fixed; top: 0; width:100% !important; background-color:#fff; max-width:100% !important;}
+@media (max-width:768px){
+.f-nav{ z-index: 99; position: fixed; top: 0; width:100% !important; padding:0 8%; background-color:#fff; max-width:100% !important; }
+}
+</style>
+<script type="text/javascript">
+$("document").ready(function () {
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 22) {
+			$('.header_t').addClass("f-nav");
+			$('.tmp_header').css("max-width", "100%");
+			$('.header_t').css("padding-top", "5px");
+		//	$('.header_t').css("height", "80px");
+			if($(window).width() < 992){
+				$('.dropdown_all').css("top", "106px");
+			}else{
+				$('.dropdown_all').css("top", "56px");
+			}
+			$('.dropdown_all').css("background", "rgba(255,255,255,1)");
+			//$('.dropdown_all').css("border-bottom", "1px solid #555");
+
+		} else {
+			$('.header_t').removeClass("f-nav");
+			$('.tmp_header').css("max-width", "100%");
+			$('.header_t').css("padding-top", "20px");
+			if($(window).width() < 992){
+				$('.dropdown_all').css("top", "150px");
+			}else{
+				$('.dropdown_all').css("top", "120px");
+			}
+
+
+			$('.dropdown_all').css("background", "rgba(255,255,255,0.6)");
+			$('.dropdown_all').css("border-bottom", "0px");
+		}
+});
+
+});
+</script>
+	<div class="header_t ">
+		<div class="tmp_header" style="margin:0 auto;">
+			<h1 class="header_logo"><a href="index.html">
+			<img src="img/logo_for_white.png" style="margin-left:-10px;" alt="저스트코드" class="img_max rollnone"><img src="img/logo_for_black.png" style="margin-left:-10px;" alt="저스트코드" class="img_max rollover"><img src="img/logo_for_black.png" alt="저스트코드" class="img_max hover">
+			</a></h1>
+			<div class="header_tgnb">
+				<div class="total" style="display:none;">
+					<div class="select_d f-marko" style="display:none;">
+					</div>
+				</div><!--total end  -->
+			</div>
+			<div class="header_gnb"><style>
+/* global navigation bar */
+.gnb								{position:absolute; right:0; z-index:999;}
+/* gnb Common */
+.menu								{position:relative; border:0px solid red;}
+.menu:after					{content:"";display:block;clear:both; width:100%;}
+.menu .major ul						{float:left;list-style:none;margin:0;padding:0}
+.menu .major ul:after			{content:"";display:block;clear:both; width:100%;}
+.menu .major ul li						{position:relative; z-index:1; float:left}
+.menu .major ul li a					{position:relative; padding:0; text-decoration:none !important}
+.menu .major ul li a span		{display:inline-block; margin:0 28px 0 0; padding:0 0 10px 0px; color:#fff; font-size:18px;}
+.f-nav .menu .major ul li a span		{display:inline-block; margin:0 28px 0 0; padding:0 0 10px 0px; color:#000; font-size:18px;}
+
+/* gnb Hover
+.menu .major li.active{z-index:2}
+.menu .major li a:hover span,.menu .major li a:active span,.menu .major li a:focus span{color:#ea002b}
+.menu .major li.active a span{color:#ea002b}
+.menu .major li.pactive a span{color:#ea002b}
+.menu .major li.pactive ul.sub{display:none;}
+*/
+/*대메뉴 포커스 효과 변경시 */
+
+/* gnb 2depth */
+.menu .major ul.sub							{position:absolute; top:38px; display:none; border:1px solid #dfdfdf; background:#fff; margin:0;padding:0;}
+.menu .major li.active ul.sub		{display:block;}
+.menu .major ul.sub li					{clear:both; margin:0; padding:7px 9px}
+.menu .major ul.sub li a				{color:#555; font-size:12px;}
+.menu .major ul.sub li a:hover	{color:#ea002b}
+
+/* gnb 2depth  */
+li.m1 ul.sub{left:0px; width:160px;}
+li.m2 ul.sub{left:0px; width:160px;}
+li.m3 ul.sub{left:0px; width:160px;}
+li.m4 ul.sub{left:0px; width:160px;}
+li.m5 ul.sub{left:0px; width:160px;}
+li.m6 ul.sub{left:0px; width:160px;}
+</style>
+<script>
+	/* 메뉴 시작*/
+$(function(){
+	var menu = $('div.menu');
+	var major = $('div.major');
+	var li_list = major.find('>ul>li');
+
+	// 서브메뉴 보이기
+	function show_menu(){
+		t = $(this);
+		li_list.removeClass('active');
+		li_list.removeClass('pactive');
+		t.parent('li').addClass('active');
+	}
+	// 서브메뉴 숨기기
+	function hide_menu(){
+		li_list.removeClass('active');
+			}
+
+	li_list.find('>a').mouseover(show_menu).focus(show_menu);
+	menu.mouseleave(hide_menu);
+	li_list.find('ul.sub').mouseleave(hide_menu);
+	$('*:not(".menu *")').focus(hide_menu);
+
+	hide_menu();
+	/* 메뉴 끝*/
+});
+
+</script>
+<!-- 1뎁스:시스템폰트, 2뎁스 : 시스템폰트 -->
+<div class="gnb">
+	<div id="menu" class="menu">
+		<div class="major"  style="border-radius:20px;">
+			<ul>
+							<li class="m1"><a href="about.html"><span class="f-marko">about</span></a>
+									</li>
+							<li class="m2"><a href="team.html"><span class="f-marko">team</span></a>
+									</li>
+							<li class="m3"><a href="brand.html"><span class="f-marko">brand</span></a>
+									</li>
+							<li class="m4"><a href="news.html"><span class="f-marko">news</span></a>
+									</li>
+							<li class="m5"><a href="career.html"><span class="f-marko">career</span></a>
+									</li>
+						</ul>
+		</div>
+	</div>
+</div></div>
+
+			<div id="btn-fullmenu" class="header_menu_btn">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+	$(document).ready(function(){
+			$(".select_d").on('click' , function(){
+				if($(".select_d").find("span").attr("class")=="down"){
+					$(".select_op").slideDown(180);
+					$(".select_d").find("span").html("<img src='/include/header/force/img/lang_up.png'>");
+					$(".f-nav .select_d").find("span").html("<img src='/include/header/force/img/lang_up_roll.png'>");
+					$(".modal .select_d").find("span").html("<img src='/include/header/force/img/lang_up_roll.png'>");
+					$(".select_d").find("span").removeClass("down");
+					$(".select_d").find("span").addClass("up");
+				}else if($(".select_d").find("span").attr("class")=="up"){
+					$(".select_op").slideUp(90);
+					$(".select_d").find("span").html("<img src='/include/header/force/img/lang_down.png'>");
+					$(".f-nav .select_d").find("span").html("<img src='/include/header/force/img/lang_down_roll.png'>");
+					$(".modal .select_d").find("span").html("<img src='/include/header/force/img/lang_down_roll.png'>");
+					$(".select_d").find("span").removeClass("up");
+					$(".select_d").find("span").addClass("down");
+				}
+			});
+	});
+</script>
+
+<!-- 뷰저블 -->
+<script type="text/javascript">
+(function(w, d, a){
+    w.__beusablerumclient__ = {
+        load : function(src){
+            var b = d.createElement("script");
+            b.src = src; b.async=true; b.type = "text/javascript";
+            d.getElementsByTagName("head")[0].appendChild(b);
+        }
+    };w.__beusablerumclient__.load(a);
+})(window, document, "//rum.beusable.net/script/b200103e111736u425/cffeae9fde");
+</script>
+<!-- //뷰저블 -->
+		</div><!-- wrap_header end -->
+<!-- wrap_main start -->
+<div id="wrap_main">
+	<style>
+.main_visual iframe {position: absolute;width: 400%;height: 120%;min-height:1060px;margin-left: -150%;margin-top: -50px;z-index: 0;}
+.slider-wrapper .slider	{height:500px;}
+.slider-wrapper .slider .slide	{background-size:auto !important; height:500px;}
+.slider-progress {margin-left: 80px; width: 73%; height: 1px; background: #e5e5e5;}
+.slick-next	{right:10px; height:22px; background:url(img/main_slide_next.png) no-repeat center top; z-index:999;}
+.slick-prev	{left:10px;  height:22px; text-align:right;background:url(img/main_slide_prev.png) no-repeat center top; z-index:999;}
+.slick-next:focus, .slick-next:hover, .slick-prev:focus, .slick-prev:hover	{}
+@media(min-width:2200px){
+.slider-wrapper .slider .slide	{background-size:100% !important;}
+}
+@media(max-width:1240px){
+.slider-progress {margin-left: 80px; width: 70%; height: 1px; background: #e5e5e5;}
+}
+@media(max-width:991px){
+.slider-progress {margin-left: 80px; width: 60%; height: 1px; background: #e5e5e5;}
+}
+@media(max-width:768px){
+.slider-progress	{display:none;}
+.slider-wrapper .slider	{height:auto;}
+.slider-wrapper .slider .slide	{background-image:none !important; background-color:#fff !important; height:auto;}
+.slick-next	{display:none !important;}
+.slick-prev	{display:none !important;}
+}
+
+@charset "utf-8";
+
+/* 새글 스킨 (latest) */
+.lt_pc {}
+.lt {position:relative;}
+.lt ul {margin:0 0 10px;padding:0;list-style:none}
+.lt li {padding:3px 0;}
+.lt li a {font-size:22px; display:block; margin:20px 0 10px;}
+.lt li p {font-size:15px; line-height:1.6; color:#666;}
+.lt .lt_title {display:block;padding:10px 0 8px}
+.lt .lt_more {position:absolute;top:10px;right:0}
+.lt .cnt_cmt {display:inline-block;margin:0 0 0 3px;font-weight:bold}
+
+@media(max-width:768px){
+.lt li a {font-size:1.8em; display:block; margin:5px 0 5px;}/*1.8rem*/
+.lt li p {font-size:1.05rem; line-height:1.6;}
+#bg_youtube {display:none;}
+
+}
+@media(max-width:680px){
+.lt li a {font-size:1.6em; display:block; margin:5px 0 5px;}/*1.8rem*/
+.lt li p {font-size:1.05rem; line-height:1.6;}
+
+}
+
+.video_bg	{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    visibility: hidden;
+		border:1px solid red;
+		height:1000px;
+}
+#bg_youtube video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 128%;
+    height: 128%;
+		min-height:800px;
+    background-color: transparent;
+}
+</style>
+<div id="skrollr-body">
+	<div id="container_skip"></div>
+	<div class="main_visual">
+		<div id="bg_youtube" style="max-height:1029px;height:1029px;overflow:hidden !important;position:absolute;width:100%;">
+			<video id="mainVideo" muted="" loop><source src="img/PC_Footage.mp4" type="video/mp4"></video>
+		</div>
+		<img src="http://blankcorp.kr/include/main/force/img/main-bg.jpg" class="mo_block" style="widtH:100%;">
+		<div class="wid-01">
+			<p class="txt f-markb" >
+      Ideas make<br/>
+			the world<br/>
+			a better place.
+			</p>
+			<div class="linkbox_01" style="border-radius:20px;" data-400="transform:translateY(-50px); " data-800="transform:translateY(40px);">
+				<a href="about.html" class="f-markb">
+				about
+				<img src="img/arr.png"/>
+				</a>
+			</div>
+		</div>
+	</div>
+		<div class="main_center" >
+		<div class="board_01">
+      <br><br>
+			<h3 class="f-marko">just news</h3>
+			<div class="lt">
+				<ul>
+					<li>
+					<a href="news200122.html" class="f-ns">처음 뵙겠습니다! JustCode.</a>
+					<p class="">안녕하세요? 아이디어로 더 나은 세상을 만드는 JustCode입니다. 앞으로 JustCode가 보여드릴 사소한 삶의 변화를 기대해주세요.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+    <!-- 두번째 뉴스가 생기면 추가
+		<div class="board_02">
+			<div class="lt">
+				<ul>
+					<li>
+					<a href="news200122.html" class="f-ns">저스트코드</a>
+					<p class="">새로운 뉴스가 생기면 주석을 풀고 편집해주세요.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+    -->
+		<div class="clear"></div>
+		<ul class="banner-link">
+					<li>
+								<a href="http://ansayo.bu.to">
+								<img style="border-radius:20px;" src="https://scontent-icn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69909559_2401993413371813_5828878955964692826_n.jpg?_nc_ht=scontent-icn1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=oRG7i1ca-zMAX8VRwvp&oh=d356e28ee96f74d4efc12525b24bb9a8&oe=5E92FB56">
+				<h3 class="f-ns" style="font-size:30px;">안사요</h3>
+				<p class="">일본 제품 불매운동, 이제 앱으로 쉽고 빠르게 동참해보세요. 제품의 바코드를 스캔해 불매운동 정보를 간편하게 확인할 수 있고, 불매운동 리스트도 실시간으로 업데이트됩니다.</p>
+								</a>
+							</li>
+              <!-- 제품 추가 시 주석 제거 후 편집해주세요.
+              <li>
+    								<a href="http://ansayo.bu.to">
+    								<img style="border-radius:20px;" src="https://scontent-icn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69909559_2401993413371813_5828878955964692826_n.jpg?_nc_ht=scontent-icn1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=oRG7i1ca-zMAX8VRwvp&oh=d356e28ee96f74d4efc12525b24bb9a8&oe=5E92FB56">
+    				<h3 class="f-ns" style="font-size:30px;">안사요</h3>
+    				<p class="">일본 제품 불매운동, 이제 앱으로 쉽고 빠르게 동참해보세요. 제품의 바코드를 스캔해 불매운동 정보를 간편하게 확인할 수 있고, 불매운동 리스트도 실시간으로 업데이트됩니다.</p>
+    								</a>
+    							</li>
+                -->
+
+		</ul>
+	</div><!-- main_center end -->
+	<div class="main_slide" >
+
+
+		<div class="slider-wrapper" id="slick-1" style="overflow:hidden; border-radius:20px;">
+			<div class="slider">
+								<div class="slide" style="background:url('http://blankcorp.kr/data/file/etc/1794270989_CusdmLZE_2fcbabd0e8ac4795604ce913a8b8dfb64f7e7e51.png') center top no-repeat;overflow:hidden;">
+					<img src="http://blankcorp.kr/data/file/etc/1794270989_aTpCUeN6_0e14c29096cc4973e2f2d6e8cbd9a356a327306a.png" class="mo_block img-responsive">
+				</div>
+								<div class="slide" style="background:url('http://blankcorp.kr/data/file/etc/1794270989_xJrcl7EQ_ff71fa1e2bd3ff0b65f5400680b990e6ecbebf6d.png') center top no-repeat;overflow:hidden;">
+					<img src="http://blankcorp.kr/data/file/etc/1794270989_NBMRxtjP_7423fd9bdfccd015c4395bb506a9c5a0776208a2.png" class="mo_block img-responsive">
+				</div>
+								<div class="slide" style="background:url('http://blankcorp.kr/data/file/etc/1794270989_QuZAPpkr_90139bc253c6399033b51105df2547e8313cac02.png') center top no-repeat;overflow:hidden;">
+					<img src="http://blankcorp.kr/data/file/etc/1794270989_vzGcLS4Z_4ca4d45883e4d407d0d93d22d6bfebf26840aa19.png" class="mo_block img-responsive">
+				</div>
+								<div class="slide" style="background:url('http://blankcorp.kr/data/file/etc/1794270989_omafpXSI_e830ce9aa486a3eb58a4e5edfec4cdea4266f0fe.png') center top no-repeat;overflow:hidden;">
+					<img src="http://blankcorp.kr/data/file/etc/1794270989_Lo7NlzMP_2937e15f9582b63945a57b713f6ef51ee5e50808.png" class="mo_block img-responsive">
+				</div>
+							</div>
+		</div>
+		<div class="wid-01">
+			<div class="wrap_spn">
+				<span id="spn_cur_cnt" class="f-mark">01</span> <span id="spn_cnt" class="f-mark" style="color:#cacaca;">/ 04</span>
+			</div>
+			<div class="slider-progress">
+				<div class="progress"></div>
+			</div>
+			<div class="linkbox_02_main" data-1600="transform:translateY(-50px); " data-2000="transform:translateY(60px);" >
+				<a href="devstory.html" class="f-ns">
+				개발<br>스토리
+				<img src="img/arr.png"/>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+		$(function(){
+			cnt = $(".slider > div").length;
+			if(cnt < 10){
+				cnt = "0"+cnt;
+			}
+			$("#spn_cnt").html("/ " + cnt);
+			var time = 4; //사진 개수
+			var $bar,
+					$slick,
+					isPause,
+					tick,
+					percentTime;
+
+			$slick = $('.slider');
+			$slick.slick({
+				draggable: true,
+				adaptiveHeight: false,
+				dots: false,
+				mobileFirst: true,
+				pauseOnDotsHover: true,
+			});
+			$bar = $('.slider-progress .progress');
+
+			$slick.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+
+				resetProgressbar();
+				percentTime = 0;
+				isPause = false;
+				tick = setInterval(interval, 10);
+
+				var currentSlide = nextSlide;
+				if((currentSlide+1) < 10){
+					currentSlide = "0"+(currentSlide+1);
+				}
+				$("#spn_cur_cnt").html(currentSlide);
+				startProgressbar();
+			});
+
+			$('.slider-wrapper').on({
+				mouseenter: function() {
+					//isPause = true;
+					isPause = false;
+
+				},
+				mouseleave: function() {
+					isPause = false;
+				}
+			})
+
+			function startProgressbar() {
+				resetProgressbar();
+				percentTime = 0;
+				isPause = false;
+				tick = setInterval(interval, 10);
+			}
+
+			function interval() {
+				if(isPause === false) {
+					percentTime += 1 / (time+0.1);
+					$bar.css({
+						width: percentTime+"%"
+					});
+					if(percentTime >= 100)
+						{
+							$slick.slick('slickNext');
+							var currentSlide = $slick.slick('slickCurrentSlide');
+							if((currentSlide+1) < 10){
+								currentSlide = "0"+(currentSlide+1);
+							}
+							$("#spn_cur_cnt").html(currentSlide);
+							startProgressbar();
+						}
+				}
+			}
+			function resetProgressbar() {
+				$bar.css({
+				 width: 0+'%'
+				});
+				clearTimeout(tick);
+			}
+			startProgressbar();
+			//console.log($("html,body").scrollTop());
+		});
+		</script>
+<script>
+/*
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var mvID = ["영상파일 파일 #1에 첨부"];
+var player;
+function onYouTubeIframeAPIReady() {
+		player = new YT.Player('intro_movie', {
+				videoId: mvID[0],
+				playerVars: {
+						'controls': 0,
+						'wmode': "opaque"
+				},
+				events: {
+						'onReady': onPlayerReady,
+						'onStateChange': onPlayerStateChange
+				}
+		});
+		$("#intro_movie").css("overflow", "hidden");
+}
+
+function onPlayerReady(event) {
+		event.target.mute();
+		event.target.playVideo();
+}
+function onPlayerStateChange(event) {
+		if (event.data === 0) {
+				event.target.loadVideoById(mvID[0]);
+		}
+}
+*/
+
+$(function(){
+	var vid = document.getElementById("mainVideo");
+	vid.autoplay = true;
+	vid.load();
+});
+$(document).ready(function(){
+			skrollrInit();
+		init_movie();
+
+	$(window).resize(function(){
+				init_movie();
+
+	})
+});
+
+function init_movie(){
+	//console.log($(window).height());
+	var wid = $(window).width();
+	var hei = $(window).height();
+	var bi_int = 1029 - $(window).height();
+	var wid2 = parseInt(wid+200);
+	var hei2 = parseInt(hei+200);
+	//"1280 x 780"
+
+	var windowWidth = $( window ).width();
+	var widthRatio = 16;
+	var heightRatio = 9;
+	var vdHeight = parseInt(( wid2 / widthRatio ) * heightRatio);
+	var vdBox = jQuery("#vd_box");
+	vdBox.css("height", vdHeight);
+	if(hei > vdHeight){
+		vdHeight = hei;
+	}
+
+	targetwidth = 1920;
+	targetheight = 1080;
+
+	var rate, newwidth, newheight;
+	boxwidth = $( window ).width();
+	boxheight = $( window ).height();
+
+	rate = ( targetwidth > targetheight )? boxheight/targetheight : boxwidth/targetwidth;
+	rate = ( boxheight > Math.round(targetheight*rate) )? boxheight/targetheight : ( boxwidth > targetwidth*rate )? boxwidth/targetwidth : rate;
+
+	newwidth = Math.max(boxwidth, Math.round(targetwidth*rate));
+	newheight = Math.max(boxheight, Math.round(targetheight*rate));
+
+	$("#bg_youtube").find("video").css({
+		width: newwidth,
+		height: newheight,
+		marginLeft: (boxwidth-newwidth)/2,
+		marginTop: (boxheight-newheight)/2
+	});
+
+	//$("#bg_youtube").find("video").css({"width":wid2+"px", "height":vdHeight+"px", "margin-left":"-100px"});
+
+	if($(window).width() < 752){
+		$("#bg_youtube").hide();
+		$(".main_visual").css({"height":"auto"});
+		$(".main_visual").find(".txt").css({"top":"inherit", "bottom":"120px"});
+		$(".linkbox_01").css({"top":"inherit", "bottom":"-40px"});
+	}else{
+		$("#bg_youtube").show();
+		$(".main_visual").css({"height":hei+"px"});
+		$(".main_visual").find(".txt").css({"top":parseInt(589-bi_int)+"px"});
+		$(".linkbox_01").css({"top":parseInt(900-bi_int)+"px"});
+	}
+
+	$("#bg_youtube").css({"height":hei+"px", "max-height":hei+"px"});
+
+	var tmp_arr = new Array();
+	j = 0;
+	$(".linkbox_01").each(function() {
+		$.each(this.attributes, function(i) {
+			// this.attributes is not a plain object, but an array
+			// of attribute nodes, which contain both the name and value
+			if(/data/.exec(this.name)) {
+				tmp_arr[j] = this.name;
+				//console.log(rega[0]);
+				//console.log(this.name + "====" + this.value);
+				j++;
+			}
+		});
+	});
+
+	for(k = 0; k < (j); k++){
+		//console.log(tmp_arr[k]);
+		$(".linkbox_01").removeAttr(tmp_arr[k]);
+	}
+		$(".linkbox_01").attr("data-"+parseInt(360-bi_int), "transform:translateY(-20px);");
+	$(".linkbox_01").attr("data-"+parseInt(760-bi_int), "transform:translateY(40px);");
+
+	sk_obj.refresh();
+}
+
+//onYouTubeIframeAPIReady();
+</script></div>
+<!-- wrap_main end -->
+<!-- } 콘텐츠 끝 -->
+<!-- 하단 시작 { -->
+		<div id="wrap_footer">
+
+
+<div class="footer_t">
+	<div class="sns">
+		<!--<a href="https://www.facebook.com/justcode/"><img src="img/sns_f.jpg"></a>-->
+		<a href="https://www.instagram.com/justcode/"><img src="img/sns_i.jpg"></a>
+	</div>
+	<div class="footer_txt">
+		<p class="f-mark">JustCode Corp.</p>
+		<p class="f-marko">Copyright, JustCode Corp. All rights reserved.</p>
+	</div>
+	<div class="footer_info">
+		<p class="f-mark">justcode@kakao.com</p>
+		<p class="f-nb">JustCode의 위치는 공개되지 않습니다.</p>
+		<p class="f-nb">더 나은 삶을 만들기 위해 멈추지 않고 움직이겠습니다.</p>
+	</div>
+	<div class="footer_txt JustCode">
+		<p class="f-mark">blank Corp.</p>
+		<p class="f-marko">Copyright, JustCode Corp. All rights reserved.</p>
+	</div>
+
+	<div class="clear"></div>
+</div>
+		</div><!-- wrap_footer end -->
+	</div><!-- wrap end -->
+</div><!-- total_wrap end -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156689557-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-156689557-1');
+</script>
+
+<!-- } 하단 끝 -->
+
+<script>
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+
+<script src="http://blankcorp.kr/mobile/include/force/assets/wow/wow.min.js"></script>
+<link rel="stylesheet" href="http://blankcorp.kr/mobile/include/force/assets/wow/animate.css">
+
+<script>
+var wow = new WOW({
+	boxClass:     'wowload',      // animated element css class (default is wow)
+	animateClass: 'animated', // animation css class (default is animated)
+	offset:       0,          // distance to the element when triggering the animation (default is 0)
+	mobile:       true,       // trigger animations on mobile devices (default is true)
+	live:         true        // act on asynchronously loaded content (default is true)
+});
+</script>
+
+<!--[if gt IE 8]>
+<script type="text/javascript">
+if(!navigator.userAgent.match(/(iPhone|android|iPad)/)){
+wow.init();
+}
+</script>
+<![endif]-->
+
+<!--[if !IE]> -->
+<script type="text/javascript">
+if(!navigator.userAgent.match(/(iPhone|android|iPad)/)){
+wow.init();
+}
+</script>
+<!-- <![endif]-->
+
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+
+</body>
+</html>
